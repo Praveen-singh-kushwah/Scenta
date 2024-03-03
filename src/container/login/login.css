@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.login_outercontainer{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_main{
+    width: 50rem;
+    height: 80%;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login_content{
+    height: 100%;
+    position: relative;
+    background-color: rgb(173, 240, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_innercontent{
+    width: 70%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_heading h1{
+    font-size: 3rem;
+}
+
+.login_from{
+    width: 100%;
+}
+
+.login_from form{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_username , .login_passwd{
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} 
+
+.usericon>* , .passwdicon>* , .googleicon>*{
+    width: 2rem;
+    height: 2rem;
+}
+
+.userinpt{
+    height: 2rem;
+}
+
+
+.userinpt input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    background-color: rgba(255, 255, 0, 0);
+    outline: none;
+    font-size: 15px;
+}
+
+.forgot_psswdcontianer{
+    width: 100%;
+}
+
+.forgot_psswdcontianer p{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login_btn button{
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loginWithGoogle{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.googlecontent {
+    height: 100%;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+
+.googlecontent h3{
+    font-weight: 600;
+}
+
+.cancel_login{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cancel_login>*{
+    scale: 2.2;
+    transition: all 0.3s ease-in-out;
+}
+
+.cancel_login>*:hover{
+    scale: 3;
+}
+
+.login_sideimg{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login_sideimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

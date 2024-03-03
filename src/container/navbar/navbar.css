@@ -1,0 +1,109 @@
+.nav_outerContainer {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_innerContainer {
+    width: 98%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.nav_logo {
+    width: 13%;
+    height: 150%;
+}
+
+.nav_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav_linkContainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_linkContainer li {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    letter-spacing: 1px;
+    list-style: none;
+    font-style: normal;
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav_linkContainer li::after{
+    content: '';
+    width: 100%;
+    height: 0.175rem;
+    background: black;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+}
+
+.nav_linkContainer li:hover:after{
+    transform: scale(1,1);
+}
+
+.nav_icons {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav_icons>* {
+    width: 40px;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.nav_icons>*:hover{
+    scale: 1.1;
+}
+
+
+.nav_cart_container{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: all 2s ease;
+}
+
+.nav_searchbar{
+    position: absolute;
+    right: 190px;
+}
+
+#searbar{
+    height: 40px;
+    width: 15rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 15px;
+}
+
+.nav_login_container{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
